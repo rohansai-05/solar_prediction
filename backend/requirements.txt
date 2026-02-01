@@ -6,4 +6,5 @@ opencv-python-headless
 joblib
 tensorflow
 scikit-learn
+lightgbm
 gunicorn
