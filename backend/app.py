@@ -9,7 +9,9 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.applications.resnet50 import preprocess_input
 
 app = Flask(__name__)
-CORS(app)
+
+
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
